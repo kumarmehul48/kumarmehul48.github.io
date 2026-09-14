@@ -3,92 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mehul Parmar | Medical Billing &amp; RCM Outsourcing</title>
-<meta name="description" content="Outsource your medical billing to a dedicated RCM partner. Higher collections, fewer denials, zero billing headaches for your practice.">
+<title>Revenue Is Not Finance. It's Infrastructure. | RCM Partner for US Practices</title>
+<meta name="description" content="Most practices lose 10–20% of collectible revenue to denials, underpayments and aged A/R they never see. See where your revenue is hiding — then fix it.">
 <style>
   :root{
-    --teal:#2563eb; --teal-dark:#1e40af; --navy:#1e3a8a; --slate:#475569;
-    --light:#f8fafc; --border:#e2e8f0; --accent:#f59e0b;
+    --blue:#2563eb; --blue-dk:#1e40af; --navy:#1e3a8a; --slate:#475569;
+    --light:#f8fafc; --border:#e2e8f0; --accent:#93c5fd;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--navy);background:#fff;line-height:1.6;}
+  body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--navy);background:#fff;line-height:1.65;}
   .container{max-width:1100px;margin:0 auto;padding:0 24px;}
+  img{max-width:100%;display:block;}
+  h2{font-size:31px;font-weight:800;line-height:1.25;}
+  .section-sub{color:var(--slate);margin-top:12px;max-width:680px;}
+
   /* HERO */
-  .hero{background:linear-gradient(135deg,#1e3a8a 0%,#1e40af 60%,#2563eb 100%);color:#fff;padding:80px 0 90px;}
-  .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;}
+  .hero{background:linear-gradient(135deg,#1e3a8a 0%,#1e40af 60%,#2563eb 100%);color:#fff;padding:66px 0 74px;}
+  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;}
   .badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#93c5fd;padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;letter-spacing:.5px;margin-bottom:20px;}
-  .hero h1{font-size:44px;line-height:1.15;font-weight:800;margin-bottom:18px;}
+  .hero h1{font-size:40px;line-height:1.15;font-weight:800;margin-bottom:16px;}
   .hero h1 span{color:#93c5fd;}
-  .hero p{font-size:18px;color:#cbd5e1;margin-bottom:28px;max-width:520px;}
-  .btn{display:inline-block;background:var(--accent);color:#fff;font-weight:700;padding:15px 34px;border-radius:10px;text-decoration:none;font-size:16px;box-shadow:0 4px 14px rgba(245,158,11,.4);transition:transform .15s;}
+  .hero p{font-size:17.5px;color:#dbeafe;margin-bottom:14px;max-width:540px;}
+  .hero .kicker{font-weight:700;color:#fff;}
+  .btn{display:inline-block;background:#fff;color:var(--blue-dk);font-weight:700;padding:15px 30px;border-radius:10px;text-decoration:none;font-size:16px;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .15s;margin-top:10px;}
   .btn:hover{transform:translateY(-2px);}
-  .btn-ghost{display:inline-block;margin-left:14px;color:#fff;font-weight:600;padding:15px 24px;border:1px solid rgba(255,255,255,.4);border-radius:10px;text-decoration:none;transition:background .15s;}
+  .btn-ghost{display:inline-block;margin-left:12px;color:#fff;font-weight:600;padding:15px 22px;border:1px solid rgba(255,255,255,.4);border-radius:10px;text-decoration:none;transition:background .15s;margin-top:10px;}
   .btn-ghost:hover{background:rgba(255,255,255,.1);}
-  .hero-stats{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:28px;}
-  .hero-stats h3{font-size:15px;text-transform:uppercase;letter-spacing:1px;color:#93c5fd;margin-bottom:18px;}
-  .stat-row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.12);}
-  .stat-row:last-child{border-bottom:none;}
-  .stat-row .num{font-size:26px;font-weight:800;color:#fff;}
-  .stat-row .lbl{font-size:13px;color:#cbd5e1;}
-  /* PAIN */
-  .pain{background:var(--light);padding:70px 0;}
-  .pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px;}
-  .pain-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:28px;box-shadow:0 2px 8px rgba(15,23,42,.05);}
-  .pain-card .icon{font-size:30px;margin-bottom:12px;}
-  .pain-card h3{font-size:19px;margin-bottom:10px;}
-  .pain-card p{font-size:15px;color:var(--slate);}
-  .section-title{text-align:center;font-size:34px;font-weight:800;}
-  .section-sub{text-align:center;color:var(--slate);margin-top:10px;max-width:640px;margin-left:auto;margin-right:auto;}
-  /* SERVICES */
-  .services{padding:70px 0;}
-  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px;}
-  .svc{border-radius:14px;padding:28px;background:#fff;border:1px solid var(--border);border-top:4px solid var(--teal);}
-  .svc h3{font-size:19px;margin:10px 0;}
-  .svc p{font-size:14.5px;color:var(--slate);}
-  .svc .tag{display:inline-block;background:#dbeafe;color:var(--teal-dark);font-size:12px;font-weight:700;padding:4px 10px;border-radius:6px;}
-  /* HOW */
-  .how{background:var(--navy);color:#fff;padding:70px 0;}
-  .how .section-title{color:#fff;}
-  .how .section-sub{color:#94a3b8;}
-  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:44px;}
-  .step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:28px;}
-  .step .n{width:42px;height:42px;border-radius:50%;background:var(--teal);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;margin-bottom:16px;}
-  .step h3{font-size:18px;margin-bottom:8px;}
-  .step p{font-size:14.5px;color:#94a3b8;}
-  /* WHY */
-  .why{padding:70px 0;background:var(--light);}
-  .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:36px;}
-  .why-item{display:flex;gap:14px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px;align-items:flex-start;}
-  .why-item .chk{color:var(--teal);font-size:20px;font-weight:800;}
-  .why-item h4{font-size:16px;margin-bottom:4px;}
-  .why-item p{font-size:14px;color:var(--slate);}
+  .hero-img{border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35);}
+
+  /* SCENARIO */
+  .scenario{padding:64px 0;background:var(--light);}
+  .scenario-box{background:#fff;border:1px solid var(--border);border-radius:16px;padding:34px 38px;box-shadow:0 2px 10px rgba(30,58,138,.05);}
+  .scenario-box .time{font-size:13px;font-weight:800;letter-spacing:1.5px;color:var(--blue);}
+  .scenario-box p{font-size:17px;margin-top:10px;}
+  .scenario-box p+p{margin-top:10px;}
+  .scenario-punch{font-weight:800;color:var(--blue-dk);}
+
+  /* DATA */
+  .data{padding:70px 0;}
+  .data-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px;}
+  .data-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:26px;box-shadow:0 2px 8px rgba(30,58,138,.05);}
+  .data-card .big{font-size:34px;font-weight:800;color:var(--blue);}
+  .data-card h4{font-size:15.5px;margin:8px 0 6px;}
+  .data-card p{font-size:14px;color:var(--slate);}
+  .data-src{margin-top:18px;font-size:12px;color:var(--slate);}
+
+  /* LEAKS */
+  .leaks{padding:70px 0;background:var(--navy);color:#fff;}
+  .leaks h2{color:#fff;}
+  .leaks .section-sub{color:#dbeafe;}
+  .leak-list{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .leak{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-left:5px solid #93c5fd;border-radius:13px;padding:24px;}
+  .leak .n{font-size:13px;font-weight:800;color:#93c5fd;letter-spacing:1px;}
+  .leak h4{font-size:17px;margin:6px 0 6px;}
+  .leak p{font-size:14.5px;color:#dbeafe;}
+  .leak .cost{display:inline-block;margin-top:10px;background:rgba(147,197,253,.15);color:#93c5fd;font-size:13px;font-weight:700;padding:4px 10px;border-radius:6px;}
+  .leak-wide{grid-column:1 / -1;}
+  .leaks-verdict{margin-top:32px;font-size:19px;font-weight:800;color:#93c5fd;text-align:center;}
+
+  /* WHY IT STAYS BROKEN */
+  .broken{padding:70px 0;}
+  .broken p.big{font-size:22px;font-weight:800;line-height:1.45;margin-bottom:18px;}
+  .broken p.big span{color:var(--blue);}
+  .broken p{font-size:16.5px;color:var(--slate);margin-bottom:14px;}
+
+  /* SHIFT */
+  .shift{padding:74px 0;background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff;}
+  .shift-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:44px;align-items:center;}
+  .shift h2{color:#fff;}
+  .shift h2 span{color:#93c5fd;}
+  .shift p{color:#dbeafe;margin-bottom:14px;font-size:16.5px;}
+  .shift .punch{font-weight:800;color:#fff;}
+  .shift-img{border-radius:14px;overflow:hidden;box-shadow:0 16px 50px rgba(0,0,0,.35);}
+
+  /* FIX MAP */
+  .fix{padding:70px 0;background:var(--light);}
+  .fix-list{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .fix-row{display:flex;gap:14px;background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px;align-items:flex-start;}
+  .fix-row .arrow{min-width:30px;height:30px;border-radius:8px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;}
+  .fix-row .leak-n{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:.5px;}
+  .fix-row h4{font-size:16px;margin:2px 0 4px;}
+  .fix-row p{font-size:14px;color:var(--slate);}
+
+  /* REVIEW */
+  .review{padding:70px 0;}
+  .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px;}
+  .review-card{border:1px solid var(--border);border-top:4px solid var(--blue);border-radius:13px;padding:24px;background:#fff;}
+  .review-card .step{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:1px;}
+  .review-card h4{font-size:17px;margin:6px 0 6px;}
+  .review-card p{font-size:14px;color:var(--slate);}
+
+  /* ABOUT STRIP */
+  .about{padding:60px 0;background:var(--light);}
+  .about-box{background:#fff;border:1px solid var(--border);border-radius:16px;padding:32px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;align-items:center;}
+  .about-box .col h4{font-size:16px;margin-bottom:4px;}
+  .about-box .col p{font-size:14px;color:var(--slate);}
+
   /* FORM */
-  .cta{padding:80px 0;background:linear-gradient(135deg,#1e40af,#2563eb);}
-  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
-  .cta h2{color:#fff;font-size:34px;font-weight:800;margin-bottom:16px;}
-  .cta .lead{color:#dbeafe;font-size:17px;margin-bottom:20px;}
+  .cta{padding:76px 0;background:linear-gradient(135deg,#1e40af,#2563eb);}
+  .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center;}
+  .cta h2{color:#fff;}
+  .cta .lead{color:#dbeafe;font-size:17px;margin-bottom:18px;}
   .cta ul{list-style:none;}
-  .cta li{color:#e2e8f0;padding:6px 0;font-size:15.5px;}
+  .cta li{color:#eff6ff;padding:6px 0;font-size:15.5px;}
   .cta li::before{content:"✓ ";color:#93c5fd;font-weight:800;}
-  form{background:#fff;border-radius:16px;padding:34px;box-shadow:0 10px 40px rgba(0,0,0,.25);}
-  form h3{font-size:22px;margin-bottom:6px;}
-  form .note{font-size:13.5px;color:var(--slate);margin-bottom:18px;}
+  form{background:#fff;border-radius:16px;padding:32px;box-shadow:0 10px 40px rgba(0,0,0,.25);}
+  form h3{font-size:21px;margin-bottom:6px;}
+  form .note{font-size:13.5px;color:var(--slate);margin-bottom:16px;}
   .frow{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-  .fld{margin-bottom:14px;}
+  .fld{margin-bottom:13px;}
   .fld input,.fld select,.fld textarea{width:100%;padding:12px 14px;border:1.5px solid var(--border);border-radius:9px;font-size:15px;font-family:inherit;background:#fff;color:var(--navy);}
-  .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--teal);}
-  .submit{width:100%;background:var(--teal);color:#fff;border:none;padding:15px;border-radius:10px;font-size:17px;font-weight:700;cursor:pointer;transition:background .15s;}
-  .submit:hover{background:var(--teal-dark);}
-  .fineprint{text-align:center;font-size:12px;color:var(--slate);margin-top:12px;}
-  /* FOOTER */
-  footer{background:var(--navy);color:#94a3b8;text-align:center;padding:28px 0;font-size:14px;}
-  footer a{color:#93c5fd;text-decoration:none;}
+  .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--blue);}
+  .submit{width:100%;background:var(--blue);color:#fff;border:none;padding:15px;border-radius:10px;font-size:17px;font-weight:700;cursor:pointer;transition:background .15s;}
+  .submit:hover{background:var(--blue-dk);}
+  .fineprint{text-align:center;font-size:12px;color:var(--slate);margin-top:11px;}
+
+
+  /* BROKEN GRID */
+  .broken-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;}
+  /* CYCLE */
+  .cycle{padding:74px 0;background:var(--light);}
+  .cycle-hero{max-width:560px;margin:34px auto 10px;border-radius:16px;overflow:hidden;box-shadow:0 10px 34px rgba(30,58,138,.12);}
+  .cycle-list{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px;}
+  .step-card{background:#fff;border:1px solid var(--border);border-radius:13px;padding:22px;position:relative;}
+  .step-card .stg{font-size:12px;font-weight:800;color:var(--blue);letter-spacing:1px;}
+  .step-card h4{font-size:16.5px;margin:6px 0 6px;}
+  .step-card p{font-size:14px;color:var(--slate);}
+  .step-card .sla{display:inline-block;margin-top:10px;background:var(--navy);color:#93c5fd;font-size:12px;font-weight:800;padding:4px 10px;border-radius:6px;letter-spacing:.5px;}
+  /* SPEED */
+  .speed{padding:74px 0;}
+  .speed-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:center;}
+  .speed-img{border-radius:14px;overflow:hidden;box-shadow:0 16px 50px rgba(30,58,138,.18);}
+  .speed-chips{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:22px 0;}
+  .schip{background:#fff;border:1px solid var(--border);border-radius:11px;padding:14px 18px;font-size:14.5px;color:var(--slate);}
+  .schip span{display:block;font-size:22px;font-weight:800;color:var(--blue);}
+
+  /* REALITY */
+  .reality{padding:70px 0;}
+  .reality-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px;}
+  .real-card{background:#fff;border:1px solid var(--border);border-radius:13px;padding:24px;}
+  .real-card .rn{width:30px;height:30px;border-radius:8px;background:var(--navy);color:#93c5fd;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;margin-bottom:10px;}
+  .real-card h4{font-size:16.5px;margin-bottom:6px;}
+  .real-card p{font-size:14px;color:var(--slate);}
+  .reality-verdict{margin-top:30px;font-size:18px;line-height:1.5;}
+  footer{background:var(--navy);color:#93c5fd;text-align:center;padding:26px 0;font-size:14px;}
+  footer strong{color:#fff;}
+
   @media(max-width:900px){
-    .hero-grid,.cta-grid{grid-template-columns:1fr;}
-    .pain-grid,.svc-grid,.steps,.why-grid{grid-template-columns:1fr;}
-    .hero h1{font-size:32px;}
+    .hero-grid,.cta-grid,.shift-grid{grid-template-columns:1fr;}
+    .data-grid,.review-grid,.reality-list{grid-template-columns:1fr;}
+    .leak-list,.fix-list,.cycle-list{grid-template-columns:1fr;}
+    .broken-grid,.speed-grid{grid-template-columns:1fr;}
+    .speed-chips{grid-template-columns:1fr;}
+    .hero h1{font-size:30px;}
+    h2{font-size:26px;}
     .frow{grid-template-columns:1fr;}
-    .hero{padding:56px 0 60px;}
+    .btn-ghost{margin-left:0;}
+    .about-box{grid-template-columns:1fr;}
+    .hero{padding:48px 0 54px;}
   }
 </style>
 </head>
@@ -97,69 +169,179 @@
 <header class="hero">
   <div class="container hero-grid">
     <div>
-      <span class="badge">MEHUL PARMAR · MEDICAL BILLING &amp; RCM PARTNER</span>
-      <h1>Collect More.<br>Stress <span>Less.</span></h1>
-      <p>Stop losing revenue to denied claims and aging A/R. I handle your complete revenue cycle so you can focus on patients — and watch collections grow.</p>
-      <a href="#get-started" class="btn">Get Your Free Billing Audit</a>
-      <a href="#services" class="btn-ghost">See Services</a>
+      <span class="badge">MEHUL PARMAR · RCM &amp; MEDICAL BILLING PARTNER FOR US PRACTICES</span>
+      <h1>Revenue Is Not Finance.<br>It's <span>Infrastructure.</span></h1>
+      <p class="kicker">Most practices don't have a billing problem. They have a revenue cycle nobody owns.</p>
+      <p>And it quietly costs them 10–20% of everything they earn — in denials written off, underpayments never checked, and aged claims nobody works.</p>
+      <a href="https://wa.me/917043795279?text=Hi%20Mehul%2C%20I%20want%20to%20know%20where%20my%20practice%27s%20revenue%20is%20leaking." class="btn">Message Mehul on WhatsApp</a>
+      <a href="#scenario" class="btn-ghost">First — see if this is your practice ↓</a>
     </div>
-    <div class="hero-stats">
-      <h3>What practices gain</h3>
-      <div class="stat-row"><div><div class="num">98%</div><div class="lbl">Clean-claim rate target</div></div></div>
-      <div class="stat-row"><div><div class="num">15–25%</div><div class="lbl">Typical collection uplift after A/R recovery</div></div></div>
-      <div class="stat-row"><div><div class="num">48 hrs</div><div class="lbl">Average claim follow-up turnaround</div></div></div>
-      <div class="stat-row"><div><div class="num">$0</div><div class="lbl">Cost of in-house billing overhead saved</div></div></div>
+    <div class="hero-img">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/891112d38_generated_image.png" alt="A tired US physician working on denials late at night">
     </div>
   </div>
 </header>
 
-<section class="pain">
+<section class="scenario" id="scenario">
   <div class="container">
-    <h2 class="section-title">Sound familiar?</h2>
-    <p class="section-sub">If your practice is dealing with any of these, outsourcing your billing is the fastest fix.</p>
-    <div class="pain-grid">
-      <div class="pain-card"><div class="icon">📉</div><h3>Revenue leaking from denials</h3><p>Claims bounce back for coding and eligibility errors — and nobody has time to fight every denial. The money quietly disappears.</p></div>
-      <div class="pain-card"><div class="icon">⏳</div><h3>A/R piling up in aging buckets</h3><p>Old claims sit uncollected past 90 days. The longer they age, the lower your odds of ever getting paid.</p></div>
-      <div class="pain-card"><div class="icon">😵</div><h3>Billing headaches, not patients</h3><p>Chasing claims, posting payments, handling payer calls — it eats your staff's day and your evenings. Patient growth takes a back seat.</p></div>
+    <div class="scenario-box">
+      <div class="time">TUESDAY · 6:40 PM · YOUR PRACTICE</div>
+      <p>Front desk went home at 5. You're still here, staring at a payer portal. Claim denied. Again. Your biller says "it's the payer." The payer says "it's the coding." Nobody actually knows.</p>
+      <p>Meanwhile: three patients need follow-ups, a stack of authorizations is waiting, the A/R report hasn't been opened in weeks — and tomorrow morning, you're seeing patients at 8 AM sharp.</p>
+      <p class="scenario-punch">Sound familiar? That's not bad luck. That's a revenue cycle without an owner.</p>
     </div>
   </div>
 </section>
 
-<section class="services" id="services">
+<section class="data">
   <div class="container">
-    <h2 class="section-title">End-to-end RCM, done right</h2>
-    <p class="section-sub">One partner for your entire revenue cycle — from eligibility to final payment.</p>
-    <div class="svc-grid">
-      <div class="svc"><span class="tag">REVENUE CYCLE</span><h3>Full-Cycle RCM</h3><p>Eligibility verification, charge entry, claim submission, payment posting, and reporting — managed completely off your plate.</p></div>
-      <div class="svc"><span class="tag">FIRST-PASS</span><h3>Clean-Claim Submission</h3><p>Meticulous coding review and scrubbing before submission, so claims get paid the first time instead of bouncing back.</p></div>
-      <div class="svc"><span class="tag">RECOVERY</span><h3>A/R &amp; Denial Management</h3><p>Systematic follow-up on aging claims and aggressive denial appeals — recovering revenue you've already earned but never received.</p></div>
-      <div class="svc"><span class="tag">ACCURACY</span><h3>Medical Coding Services</h3><p>Specialty-aligned CPT, ICD-10, and HCPCS coding with compliance checks that keep your claims audit-safe.</p></div>
-      <div class="svc"><span class="tag">REPORTING</span><h3>Transparent Reporting</h3><p>Regular, plain-English reports on collections, denial trends, and A/R aging — you always know exactly where your money stands.</p></div>
-      <div class="svc"><span class="tag">PEACE OF MIND</span><h3>Compliance &amp; Security</h3><p>HIPAA-aligned processes and secure handling of patient data across every step of the billing workflow.</p></div>
+    <h2>This is what practices are up against in 2025</h2>
+    <p class="section-sub">These aren't opinions. This is what industry data says is happening to practices like yours right now.</p>
+    <div class="data-grid">
+      <div class="data-card"><div class="big">12–15%</div><h4>of claims denied on first submission</h4><p>Up from 11.8% in 2024 — and past 15% in many specialties. Every one of them costs money to rework.</p></div>
+      <div class="data-card"><div class="big">$57–$125</div><h4>cost to rework a single denied claim</h4><p>Staff time, calls, resubmission. Denials you don't fight aren't "gone" — they're written off. Your revenue.</p></div>
+      <div class="data-card"><div class="big">12 hrs</div><h4>burned per week on prior authorizations</h4><p>92%+ of physicians say PA drives burnout. It's also the #1 reason claims get denied before they're ever properly submitted.</p></div>
+      <div class="data-card"><div class="big">10–20%</div><h4>of collectible revenue simply lost</h4><p>Denials, underpayments, missed eligibility, aged-out A/R. Most practices never see the leak — only the missing cash.</p></div>
+      <div class="data-card"><div class="big">$72–140k</div><h4>per year, per in-house biller</h4><p>Salary, benefits, software, training — before the revenue you lose to their gaps. Medicare cut payments another 2.83% in 2025. Margins can't absorb both.</p></div>
+      <div class="data-card"><div class="big">~30%</div><h4>annual billing-staff turnover</h4><p>When your biller quits, your entire revenue process walks out the door with them — and restarts from zero.</p></div>
+    </div>
+    <p class="data-src">Sources: CMS &amp; MGMA benchmarks, 2025 AMA Prior Authorization Survey, industry RCM studies.</p>
+  </div>
+</section>
+
+
+<section class="reality">
+  <div class="container">
+    <h2>Why it feels so hard: running a practice in the USA today</h2>
+    <p class="section-sub">You're not imagining it. The system is genuinely stacked against small and solo practices. Here's what you're up against:</p>
+    <div class="reality-list">
+      <div class="real-card"><div class="rn">1</div><h4>Payers deny as a business strategy</h4><p>Insurers know most practices lack the bandwidth to appeal. A percentage of your legitimate claims gets denied on purpose — and every payer has a timely-filing limit (often just 90–180 days). One slow month and that revenue is legally erased. Forever.</p></div>
+      <div class="real-card"><div class="rn">2</div><h4>Prior authorization is a maze built to slow you</h4><p>Practices spend ~12 hours a week on PA requests. 93% of physicians say it delays care — and it's the top reason claims die before submission. Payers profit from the friction; you absorb the cost.</p></div>
+      <div class="real-card"><div class="rn">3</div><h4>The staffing math doesn't work anymore</h4><p>A single in-house biller costs $72k–$140k all-in. Billing turnover runs ~30% a year. You can't hire your way out — and every resignation resets your revenue cycle to zero.</p></div>
+      <div class="real-card"><div class="rn">4</div><h4>Reimbursement keeps shrinking</h4><p>Medicare cut physician payments another 2.83% in 2025 — while rent, wages and supplies climb. The margin that used to absorb billing leakage is gone. Every leaked dollar now comes straight out of your take-home.</p></div>
+      <div class="real-card"><div class="rn">5</div><h4>Patients owe more than ever</h4><p>High-deductible plans shifted collections to your front desk. If patient balances aren't estimated, collected and followed up properly, you're financing America's healthcare out of your own pocket.</p></div>
+      <div class="real-card"><div class="rn">6</div><h4>Admin eats your clinical hours</h4><p>For every hour with a patient, US physicians spend nearly two on paperwork and admin — much of it after hours, at home. This is the burnout you feel but never quite name.</p></div>
+    </div>
+    <p class="reality-verdict">None of this is your failure. It's a system built for hospitals, drop-shipped onto small practices. It runs on one question: <strong>who owns your revenue?</strong></p>
+  </div>
+</section>
+
+<section class="leaks">
+  <div class="container">
+    <h2>The five leaks under your table</h2>
+    <p class="section-sub">Practices don't lose money in one dramatic event. It disappears in small, invisible, ongoing leaks — the ones nobody is paid to watch.</p>
+    <div class="leak-list">
+      <div class="leak"><div class="n">LEAK 01</div><h4>Denials quietly written off</h4><p>Up to 90% of denials are recoverable — but most practices never resubmit them. The write-off becomes "normal" and the money is gone.</p><span class="cost">Invisible loss: recoverable revenue abandoned</span></div>
+      <div class="leak"><div class="n">LEAK 02</div><h4>Underpayments never checked</h4><p>Payers routinely pay less than your contracted rates. If nobody compares payments against contracts, you're financing the difference — forever.</p><span class="cost">Invisible loss: contracted money never claimed</span></div>
+      <div class="leak"><div class="n">LEAK 03</div><h4>A/R aging nobody works</h4><p>Best practice: under 20% of A/R past 90 days. Most stressed practices sit far above it. After 90 days, collectability collapses — every unworked day shrinks your money.</p><span class="cost">Invisible loss: earned money aging into nothing</span></div>
+      <div class="leak"><div class="n">LEAK 04</div><h4>Eligibility &amp; credentialing gaps</h4><p>Claims denied before submission even happens — lapsed eligibility checks, outdated payer enrollment, expired credentials. Pure preventable loss.</p><span class="cost">Invisible loss: claims dead on arrival</span></div>
+      <div class="leak leak-wide"><div class="n">LEAK 05 — THE STRUCTURAL ONE</div><h4>Your revenue process lives in one person's head</h4><p>With ~30% annual billing turnover, your revenue cycle restarts from zero every time your biller leaves. No documentation, no system, no owner — just chaos that repeats. This is why it never gets fixed: it's nobody's job until it's everybody's crisis.</p><span class="cost">Invisible loss: every transition resets your revenue</span></div>
+    </div>
+    <p class="leaks-verdict">If two or more of these feel familiar, your practice is leaking money right now — you just can't see where.</p>
+  </div>
+</section>
+
+<section class="broken">
+  <div class="container broken-grid">
+    <div class="broken-img">
+      <img src="https://media.base44.com/images/public/whatsapp/6aa79ae955736fcfd1c2e2a1/your_agent/6aa79aea55736fcfd1c2e2a2/b95a317bc_whatsapp_image_1563739178836087.jpg" alt="A tired US physician working on denials late at night" style="border-radius:14px;box-shadow:0 14px 44px rgba(30,58,138,.18);">
+    </div>
+    <div class="broken-txt">
+    <p class="big">Here's the truth nobody in your practice will say out loud: <span>everyone is busy, so nobody is accountable.</span></p>
+    <p>Your biller is busy. Your front desk is busy. Your office manager is busy. But "busy" is not a revenue strategy — and goodwill is not a denial-management plan.</p>
+    <p>The practices that consistently collect what they earn aren't the ones with smarter staff. They're the ones with a <strong>system</strong> — an owned, accountable, end-to-end revenue infrastructure that works whether or not anyone had a rough week.</p>
+    <p style="font-weight:800;color:var(--blue-dk);">That's what I build. That's the only thing I do.</p>
     </div>
   </div>
 </section>
 
-<section class="how">
-  <div class="container">
-    <h2 class="section-title">Getting started is simple</h2>
-    <p class="section-sub">No disruption to your practice. No upfront technology investment.</p>
-    <div class="steps">
-      <div class="step"><div class="n">1</div><h3>Free billing audit</h3><p>Share a snapshot of your current billing. I identify exactly where revenue is leaking and what it's costing you.</p></div>
-      <div class="step"><div class="n">2</div><h3>Seamless onboarding</h3><p>I connect to your existing EHR/practice system with zero downtime for your staff or your patients.</p></div>
-      <div class="step"><div class="n">3</div><h3>Collections climb</h3><p>Claims flow out clean, denials get worked, A/R gets recovered — and you get a simple report every cycle.</p></div>
+<section class="shift">
+  <div class="container shift-grid">
+    <div class="shift-img">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/75e6c6c38_generated_image.png" alt="A relaxed US doctor focused on patients while revenue is handled">
+    </div>
+    <div>
+      <h2>The shift: stop <span>managing billing</span>. Start running your practice.</h2>
+      <p>Your job is patients, growth and decisions. My job is everything that happens between the visit and the payment — eligibility, coding, submission, posting, denials, A/R recovery and plain-English reporting.</p>
+      <p>One accountable partner. One system. Zero chaos for your team. When you want to know where your money is, you message me directly — no gatekeepers, no call centers, no ticket numbers.</p>
+      <p class="punch">This isn't another billing vendor. It's revenue infrastructure — built, owned and answered for.</p>
     </div>
   </div>
 </section>
 
-<section class="why">
+
+<section class="cycle">
   <div class="container">
-    <h2 class="section-title">Why practices choose me</h2>
-    <div class="why-grid">
-      <div class="why-item"><span class="chk">✓</span><div><h4>Dedicated attention</h4><p>You work directly with me — not a rotating cast of account managers at a giant billing factory.</p></div></div>
-      <div class="why-item"><span class="chk">✓</span><div><h4>Performance-first mindset</h4><p>My job is measured in one thing: the collections your practice actually keeps. Alignment from day one.</p></div></div>
-      <div class="why-item"><span class="chk">✓</span><div><h4>Costs less than in-house</h4><p>No salaries, benefits, software licenses, or training costs for a billing team. Straightforward pricing that scales with your volume.</p></div></div>
-      <div class="why-item"><span class="chk">✓</span><div><h4>You keep full control</h4><p>Total transparency into every claim, every payment, every decision. Your data stays yours, always.</p></div></div>
+    <h2>The whole RCM cycle, step by step — and my speed commitment at every step</h2>
+    <p class="section-sub">You don't need to understand billing. You need to know someone owns every step below — at a speed your in-house process can't match.</p>
+    <div class="cycle-hero">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/6c9e2ddb9_generated_image.png" alt="A professional medical billing team working claims end to end">
+    </div>
+    <div class="cycle-list">
+      <div class="step-card"><div class="stg">STEP 1 · BEFORE THE VISIT</div><h4>Scheduling &amp; eligibility verification</h4><p>Every patient's coverage and benefits are verified before they walk in. No surprises, no dead-on-arrival claims.</p></div>
+      <div class="step-card"><div class="stg">STEP 2 · BEFORE THE SERVICE</div><h4>Registration &amp; prior authorization</h4><p>Authorizations secured ahead of care — so treatment is never delayed and claims are never denied for a missing PA.</p></div>
+      <div class="step-card"><div class="stg">STEP 3 · SAME DAY</div><h4>Coding &amp; charge entry</h4><p>Specialty-aligned coding with compliance review done the same day — clean, audit-safe, first-pass ready claims.</p></div>
+      <div class="step-card"><div class="stg">STEP 4 · WITHIN 24 HOURS</div><h4>Claim submission</h4><p>Every scrubbed claim is submitted within 24 hours of the visit. Speed here is everything — it's the difference between cash flow and A/R.</p><span class="sla">SLA: 24 hrs</span></div>
+      <div class="step-card"><div class="stg">STEP 5 · SAME DAY</div><h4>Payment posting &amp; contract check</h4><p>Payments posted the day they arrive and compared against your contracted rates — underpayments caught immediately, not years later.</p></div>
+      <div class="step-card"><div class="stg">STEP 6 · WITHIN 48 HOURS</div><h4>Denial management &amp; appeals</h4><p>Every denial analyzed, worked and appealed within 48 hours. Nothing gets quietly written off — recoverable money is recovered.</p><span class="sla">SLA: 48 hrs</span></div>
+      <div class="step-card"><div class="stg">STEP 7 · EVERY WEEK</div><h4>A/R follow-up &amp; recovery</h4><p>Aging buckets worked systematically every week — before claims cross the 90-day point where money dies.</p><span class="sla">Weekly</span></div>
+      <div class="step-card"><div class="stg">STEP 8 · EVERY MONTH</div><h4>Transparent reporting</h4><p>A plain-English scorecard: collections, denial trends, A/R aging. You always know exactly where your money stands.</p><span class="sla">Monthly</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="speed">
+  <div class="container speed-grid">
+    <div class="speed-img">
+      <img src="https://media.base44.com/images/public/6aa79ae955736fcfd1c2e2a1/19605ade6_generated_image.png" alt="A billing specialist submitting claims fast, on the clock">
+    </div>
+    <div>
+      <h2>Speed is the strategy.</h2>
+      <p class="section-sub" style="margin-top:12px;">A claim submitted within 24 hours and followed up relentlessly doesn't age. It pays. That's the entire secret — and it's what an unowned, "whoever is free" process can never deliver.</p>
+      <div class="speed-chips">
+        <div class="schip"><span>24 hrs</span> claim submission</div>
+        <div class="schip"><span>48 hrs</span> denial follow-up</div>
+        <div class="schip"><span>Weekly</span> A/R recovery</div>
+        <div class="schip"><span>Monthly</span> plain-English reports</div>
+      </div>
+      <a href="https://wa.me/917043795279?text=Hi%20Mehul%2C%20I%20want%20to%20know%20how%20fast%20my%20claims%20could%20be%20submitted." class="btn">Put my claims on this clock →</a>
+    </div>
+  </div>
+</section>
+
+<section class="fix">
+  <div class="container">
+    <h2>Each leak gets a specific fix — not a generic "service"</h2>
+    <p class="section-sub">Everything I take off your table maps directly to a leak above.</p>
+    <div class="fix-list">
+      <div class="fix-row"><div class="arrow">→</div><div><div class="leak-n">FIXES LEAK 01</div><h4>Denial management &amp; appeals</h4><p>Every denial analyzed, worked and appealed — recoverable money stops being written off.</p></div></div>
+      <div class="fix-row"><div class="arrow">→</div><div><div class="leak-n">FIXES LEAK 02</div><h4>Payment vs. contract audit</h4><p>Posted payments compared against contracted rates. Underpayments identified, pursued and recovered.</p></div></div>
+      <div class="fix-row"><div class="arrow">→</div><div><div class="leak-n">FIXES LEAK 03</div><h4>A/R recovery engine</h4><p>Aging buckets worked systematically — before claims pass the 90-day point of no return.</p></div></div>
+      <div class="fix-row"><div class="arrow">→</div><div><div class="leak-n">FIXES LEAK 04</div><h4>Eligibility &amp; credentialing control</h4><p>Verification before every visit, payer enrollment kept current — claims arrive alive, not dead.</p></div></div>
+      <div class="fix-row"><div class="arrow">→</div><div><div class="leak-n">FIXES LEAK 05</div><h4>System, not a person</h4><p>A documented, accountable revenue process that survives staff changes — your revenue never "restarts".</p></div></div>
+      <div class="fix-row"><div class="arrow">→</div><div><div class="leak-n">RUNS ON TOP</div><h4>Clean-claim submission &amp; reporting</h4><p>Scrubbed, compliant coding for first-pass payment — plus plain-English reports so you always know where your money stands.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="review">
+  <div class="container">
+    <h2>Start with the free revenue review — 48 hours, zero obligation</h2>
+    <p class="section-sub">Before you commit to anything, you'll know exactly where your money is going. If I can't find you money, I'll tell you that too.</p>
+    <div class="review-grid">
+      <div class="review-card"><div class="step">STEP 1</div><h4>You send one message</h4><p>A 30-second form or a single WhatsApp text. Nothing sensitive required at this stage.</p></div>
+      <div class="review-card"><div class="step">STEP 2</div><h4>I audit your revenue cycle</h4><p>Denials, underpayments, A/R aging, eligibility gaps — analyzed and ranked by dollars at stake within 48 hours.</p></div>
+      <div class="review-card"><div class="step">STEP 3</div><h4>You get a clear plan</h4><p>Where revenue is leaking, what recovering it looks like, and what it takes — in plain English, no obligation, no disruption to your practice.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="about-box">
+      <div class="col"><h4>Who I am</h4><p>Mehul Parmar — Business Development Manager specializing in medical billing &amp; RCM for solo and small US practices. 15+ years professional experience, 11+ years in BPO/KPO operations.</p></div>
+      <div class="col"><h4>How I work</h4><p>Outcome-focused partnership, not vendor outsourcing. Measured in one thing: the collections your practice actually keeps.</p></div>
+      <div class="col"><h4>How to reach me</h4><p>Directly, on WhatsApp — the same channel this page is built on. No gatekeepers, no call centers.</p></div>
     </div>
   </div>
 </section>
@@ -167,17 +349,18 @@
 <section class="cta" id="get-started">
   <div class="container cta-grid">
     <div>
-      <h2>Ready to stop leaving money on the table?</h2>
-      <p class="lead">Claim your free billing audit. I'll show you exactly where your revenue is leaking — and what recovering it looks like.</p>
+      <h2>You already know if this is your practice.</h2>
+      <p class="lead">The leak is not going to fix itself — and every month of "busy" makes it more expensive. Send one message today.</p>
       <ul>
-        <li>Free, no-obligation billing review</li>
-        <li>Clear findings within 48 hours</li>
-        <li>Zero disruption to your practice</li>
+        <li>Free revenue review, findings in 48 hours</li>
+        <li>Zero obligation, zero disruption</li>
+        <li>Direct access to me on WhatsApp</li>
+        <li>Clear next step — or an honest "you're fine"</li>
       </ul>
     </div>
     <form id="enquiry">
-      <h3>Request your free audit</h3>
-      <p class="note">Takes 30 seconds. I'll personally get back to you within one business day.</p>
+      <h3>Find my revenue leak</h3>
+      <p class="note">Takes 30 seconds. Opens WhatsApp with your enquiry pre-filled — press send and it reaches me directly.</p>
       <div class="frow">
         <div class="fld"><input type="text" name="name" placeholder="Your name" required></div>
         <div class="fld"><input type="text" name="practice_name" placeholder="Practice / clinic name" required></div>
@@ -210,21 +393,19 @@
           <option>Not sure</option>
         </select>
       </div>
-      <div class="fld"><textarea name="message" rows="3" placeholder="Biggest billing challenge right now? (optional)"></textarea></div>
-      
+      <div class="fld"><textarea name="message" rows="3" placeholder="Which leak feels most like your practice? (optional)"></textarea></div>
       <button type="submit" class="submit">Send Enquiry on WhatsApp →</button>
-      <p class="fineprint">Tapping the button opens WhatsApp with your enquiry pre-filled — send it straight to me. Your information is never shared. HIPAA-conscious handling of anything you send.</p>
+      <p class="fineprint">Your information is never shared. HIPAA-conscious handling of anything you send.</p>
     </form>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p><strong style="color:#fff">Medical Billing &amp; RCM Services</strong> — helping practices collect more and grow without billing headaches.</p>
-    <p style="margin-top:6px;">© 2026 Mehul Parmar. All rights reserved.</p>
+    <p><strong>Revenue Infrastructure for US Practices</strong> — Mehul Parmar, RCM &amp; Medical Billing Partner</p>
+    <p style="margin-top:6px;">© 2026 Mehul Parmar · kumarmehul48.github.io</p>
   </div>
 </footer>
-
 
 <script>
 document.getElementById('enquiry').addEventListener('submit', function(e){
@@ -237,9 +418,10 @@ document.getElementById('enquiry').addEventListener('submit', function(e){
     +'Phone: '+(f.querySelector('[name=phone]').value||'-')+'\n'
     +'Specialty: '+(f.querySelector('[name=specialty]').value||'-')+'\n'
     +'Monthly claims: '+(f.querySelector('[name=monthly_claims]').value||'-')+'\n'
-    +'Challenge: '+(f.querySelector('[name=message]').value||'-');
+    +'Biggest problem: '+(f.querySelector('[name=message]').value||'-');
   window.open('https://wa.me/917043795279?text='+encodeURIComponent(msg),'_blank');
 });
 </script>
+
 </body>
 </html>
